@@ -1,0 +1,20 @@
+{
+    "name": "ekapusta/doctrine-phinx-bridge-bundle",
+    "description": "Auto-generates Phinx migrations from Doctrine scheme differences.",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ekapusta\\DoctrinePhinxBridgeBundle\\": ""
+        }
+    },
+    "authors": [
+        {
+            "name": "Alexander Ustimenko",
+            "email": "ustimenko.alexander@gmail.com"
+        }
+    ],
+    "require": {
+        "doctrine/doctrine-migrations-bundle": "^1.1",
+        "robmorgan/phinx": "^0.6.4"
+    }
+}
