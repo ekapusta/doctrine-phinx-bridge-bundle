@@ -75,6 +75,10 @@ class DiffCommand extends BaseDiffCommand
 
         $fromSchema = $connection->getSchemaManager()->createSchema();
         $toSchema   = (new OrmSchemaProvider($this->getHelper('entityManager')->getEntityManager()))->createSchema();
+        if ($platform->supportsSchemas()) {
+            $namespaceName = $platform->getDefaultSchemaName();
+            $toSchema->hasNamespace($namespaceName) || $toSchema->createNamespace($namespaceName);
+        }
 
         // Not using value from options, because filters can be set from config.yml
         if ($filterExpression = $connection->getConfiguration()->getFilterSchemaAssetsExpression()) {
