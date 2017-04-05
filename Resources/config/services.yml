@@ -1,0 +1,5 @@
+services:
+    ekapusta.doctrine_migrations_diff.command:
+        class: Ekapusta\DoctrinePhinxBridgeBundle\Command\DiffCommand
+        tags:
+            - { name: console.command }
