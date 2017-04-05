@@ -14,7 +14,6 @@ Installation
 Install with composer: `composer require ekapusta/doctrine-phinx-bridge-bundle:^1.0`
 
 Add bundle to AppKernel (and DoctrineMigrationsBundle if it wasn't installed before):
-
 ```
             $bundles = [
             ...
@@ -63,4 +62,3 @@ Or run `bin/console doctrine:migrations:diff:phinx AddAbcTableMigration` to get 
             $this->execute('DROP TABLE abc');
         }
     }
-0
