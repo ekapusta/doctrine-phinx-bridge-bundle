@@ -15,6 +15,6 @@
     ],
     "require": {
         "doctrine/doctrine-migrations-bundle": "^1.1",
-        "robmorgan/phinx": "^0.6.4"
+        "robmorgan/phinx": "~0.6"
     }
 }
